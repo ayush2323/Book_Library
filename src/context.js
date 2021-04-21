@@ -27,13 +27,6 @@ const AppProvider = ({children}) => {
         setSearchInput(e.target.value)
     }
 
-    const filterData = () => {
-        const newBook = Data.filter(book => {
-            if(book.title.includes(searchInput)) return book
-        })
-        setBooks(newBook)
-    }
-
     const toggleSearchOption = () => {
         showSearch(!search)
     }
@@ -43,7 +36,8 @@ const AppProvider = ({children}) => {
     }
 
     useEffect(() => {
-        filterData()
+        const newBook = Data.filter(book => (book.title.toLowerCase()).includes(searchInput.toLowerCase()))
+        setBooks(newBook)
     }, [searchInput])
 
     return (
