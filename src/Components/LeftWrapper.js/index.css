@@ -1,0 +1,226 @@
+.left_Navigation {
+  position: relative;
+  width: 15%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.library_text {
+  position: relative;
+  width: 60px;
+  height: 24px;
+  left: 36px;
+  top: 24px;
+
+  /* Large Paragraph Style (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.015em;
+  margin: 0;
+
+  /* Devil Grey */
+
+  color: #696969;
+}
+
+.left_navigation_option {
+  position: relative;
+  left: 6%;
+  right: 6%;
+  top: 8.35%;
+  bottom: 92.09%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.play-icon {
+  /* position: relative; */
+  width: 18px;
+  height: 18px;
+  left: 36px;
+  top: 84px;
+}
+
+.my_book {
+  /* position: relative; */
+  width: 69px;
+  height: 24px;
+  left: 66px;
+  top: 81px;
+
+  /* Paragraph Style (Medium) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  letter-spacing: -0.012em;
+
+  /* Cod Grey */
+
+  color: #1e1e1e;
+}
+
+.counter_badge {
+  width: 38px;
+  height: 30px;
+  left: 232px;
+  top: 78px;
+
+  /* Snow White */
+
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.second_left_navigation_option {
+  position: relative;
+  left: 6%;
+  right: 6%;
+  top: 10.91%;
+  /* bottom: 88.54%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plus_icon {
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.new_book {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  letter-spacing: -0.012em;
+
+  /* Dark Charcoal Grey */
+
+  color: #3c3c3c;
+}
+
+.hidden {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  padding: 6px 12px;
+  /* position: absolute; */
+  /* visibility: hidden; */
+  left: 77.33%;
+  right: 10%;
+  top: 8.7%;
+  bottom: 89.33%;
+}
+
+.settings {
+  position: relative;
+  width: 71px;
+  height: 24px;
+  left: 36px;
+  top: 164px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -0.015em;
+
+  /* Devil Grey */
+
+  color: #696969;
+}
+
+.toggle_mode {
+  position: relative;
+  width: 71px;
+  height: 24px;
+  left: 36px;
+  top: 154px;
+}
+
+.dark_mode {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 64px;
+}
+
+.dark {
+  position: absolute;
+  width: 77px;
+  height: 24px;
+  left: 36px;
+  top: 61px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  letter-spacing: -0.012em;
+
+  /* Dark Charcoal Grey */
+
+  color: #3c3c3c;
+}
+
+.toggleButton {
+  position: absolute;
+  left: 78%;
+  right: 12%;
+  top: 19.37%;
+  bottom: 79.45%;
+}
+
+.icon1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 127px;
+  top: 61px;
+
+  /* Silver Grey */
+
+  background: #c3c3c3;
+}
+
+.icon2 {
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 127px;
+  top: 61px;
+
+  /* Snow White */
+
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.toggle_mode {
+  cursor: pointer;
+}

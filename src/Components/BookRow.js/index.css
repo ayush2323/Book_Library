@@ -1,0 +1,425 @@
+.book_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 5px;
+
+  position: relative;
+  width: 150px;
+  height: 245px;
+  left: 0px;
+  /* top: 112px; */
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  /* margin: 30px 0px; */
+}
+
+.full_book {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 0px;
+  /* margin: 5px; */
+
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  left: 0px;
+  /* top: 1000px; */
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  /* margin: 0px 30px; */
+}
+
+.book_cover {
+  position: static;
+  width: 140px;
+  height: 160px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 18px 0px;
+}
+
+.reading_process {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 9px 18px; */
+
+  position: absolute;
+  width: 28px;
+  height: 15px;
+  z-index: 100;
+  left: 12px;
+  top: 12px;
+
+  /* Pure White - 16.66% */
+  /* background-color: wheat; */
+  background: rgba(77, 45, 45, 0.167);
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 5px;
+}
+
+.percent {
+  position: absolute;
+  width: 25px;
+  height: 18px;
+  /* left: 18px;
+top: 9px; */
+
+  /* Tiny Paragraph (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+
+  /* Pure White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.book_genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 18px;
+
+  position: absolute;
+  width: 80px;
+  right: 10px;
+  top: 83.33%;
+  bottom: 5%;
+  z-index: 100;
+
+  /* Pure Black - 66.66% */
+
+  background: rgba(0, 0, 0, 0.6666);
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 6px;
+}
+
+.genre {
+  /* position: static; */
+  width: 49px;
+  height: 24px;
+  /* left: 18px;
+top: 9px; */
+
+  /* Paragraph Style (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.012em;
+
+  /* Pure White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.book_cover_image_conatiner {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  height: 200px;
+  width: 150px;
+
+  /* background: url(image.png); */
+  border-radius: 12px;
+}
+
+.book_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+
+  position: absolute;
+  width: 200px;
+  height: 44px;
+  left: 0px;
+  top: 200px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  /* margin: 18px 0px; */
+}
+
+.book_author {
+  position: absolute;
+  width: 200px;
+  height: 22px;
+  left: 0px;
+  top: 24px;
+
+  /* Paragraph Style (Medium) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.012em;
+
+  /* Devil Grey */
+
+  color: #696969;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.book_title {
+  position: absolute;
+  width: 200px;
+  height: 22px;
+  left: 0px;
+  top: 0px;
+
+  /* Large Paragraph Style (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  /* Cod Grey */
+
+  color: #1e1e1e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.book_col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  margin: 25px;
+
+  background: #ffffff;
+  /* background: silver; */
+  border-radius: 12px;
+}
+
+.book_cover_image_conatiner_list {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+
+  border-radius: 12px;
+  margin-top: 4px;
+  margin-left: 4px;
+  
+}
+
+.book_info_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.book_author_list {
+  position: static;
+  width: 240px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+
+  /* Large Paragraph Style (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  /* Cod Grey */
+
+  color: #1e1e1e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.book_title_list {
+  position: static;
+  width: 240px;
+  height: 24px;
+  left: 0px;
+  top: 24px;
+
+  /* Paragraph Style (Medium) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.012em;
+
+  /* Devil Grey */
+
+  color: #696969;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+/* .book_genre_list {
+} */
+
+.genre_list {
+  position: relative;
+  width: 270px;
+  height: 24px;
+  /* left: 462px;
+top: 45px; */
+
+  /* Paragraph Style (Semi Bold) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.012em;
+
+  /* Devil Grey */
+
+  color: #696969;
+}
+
+.reading_process_list {
+  position: absolute;
+  width: 270px;
+  height: 24px;
+  left: 762px;
+  top: 45px;
+
+  /* Paragraph Style (Medium) */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.012em;
+
+  /* Devil Grey */
+
+  color: #696969;
+}
+
+.percent_list {
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}

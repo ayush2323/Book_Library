@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container_dark {
+    display: flex;
+    height: 800px;
+    background-color: #000;
+}
