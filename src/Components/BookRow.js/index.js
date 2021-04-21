@@ -42,7 +42,7 @@ const BookRow = ({ item }) => {
             setGenreCss("genre_list")
             setPercentClass("percent_list")
         }
-    })
+    }, [grid])
 
     return (
         <div className={bookClass}>
