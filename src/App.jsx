@@ -8,13 +8,13 @@ function App() {
     const {darkMode} = useCostumHooks()
 
     const darkModeContainer = () => {
-        if(!darkMode) return "container"
-        return "container_dark"
+        if(!darkMode) return "#fff"
+        return "#000"
     }
 
     return (
         <main>
-            <section className={darkModeContainer()}>
+            <section style={{backgroundColor: darkModeContainer()}} className="container">
                 <LeftWrapper />
                 <div className="vertical_dividor"></div>
                 <RightWrapper />

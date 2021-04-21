@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './index.css'
-import {useCostumHooks} from '../../context'
+import { useCostumHooks } from '../../context'
 
 const BookRow = ({ item }) => {
     // const [css, setCss] = useState({
@@ -16,10 +16,14 @@ const BookRow = ({ item }) => {
     const [genreClass, setGenreClass] = useState("book_genre")
     const [genreCss, setGenreCss] = useState("genre")
     const [percentClass, setPercentClass] = useState("percent")
-    const {grid} = useCostumHooks()
-    
+    const { grid, darkMode } = useCostumHooks()
+
+    const textColor = () => {
+        if (darkMode) return "#fff"
+    }
+
     useEffect(() => {
-        if(grid) {
+        if (grid) {
             setBookClass("book_row")
             setImageClass("book_cover_image_conatiner")
             setFullBookClass("full_book")
@@ -48,15 +52,15 @@ const BookRow = ({ item }) => {
         <div className={bookClass}>
             <div className={fullBookClass}>
                 <div className={progressClass}>
-                    <span className={percentClass}>{item.progress}%</span>
+                    <span style={{ color: textColor() }} className={percentClass}>{item.progress}%</span>
                 </div>
                 <div className={genreClass}>
                     <span className={genreCss}>{item.genre}</span></div>
                 <img src={item.image} alt="book cover" className={imageClass}></img>
             </div>
             <div className={infoClass}>
-                <span className={authorClass}>{item.title}</span>
-                <span className={titleClass}>{item.writer}</span>
+                <span style={{ color: textColor() }} className={authorClass}>{item.title}</span>
+                <span style={{ color: textColor() }} className={titleClass}>{item.writer}</span>
             </div>
 
         </div>
