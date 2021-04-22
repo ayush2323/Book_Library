@@ -8,6 +8,8 @@ const AppProvider = ({children}) => {
     const [darkMode, setDarkMode] = useState(false)
     const [searchInput, setSearchInput] = useState('')
     const [books, setBooks] = useState(Data)
+    const [bookModal, setBookModal] = useState(false)
+    const [modalDetail, setModalDetail] = useState({})
 
     const showGridView = () => {
         setGrid(true)
@@ -35,13 +37,23 @@ const AppProvider = ({children}) => {
         showSearch(false)
     }
 
+    const showBookModal = (id) => {
+        setModalDetail(books[id])
+        setBookModal(true)
+    }
+
+    const closeBookModal = (e) => {
+        console.log(e)
+        setBookModal(false)
+    }
+
     useEffect(() => {
         const newBook = Data.filter(book => (book.title.toLowerCase()).includes(searchInput.toLowerCase()))
         setBooks(newBook)
     }, [searchInput])
 
     return (
-        <AppContext.Provider value={{showGridView, showListView, grid, books, search, showSearch, searchInput, searchInputHandler, toggleSearchOption, closeSearch, darkMode, toggleDarkMode}}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{showGridView, showListView, grid, books, search, showSearch, searchInput, searchInputHandler, toggleSearchOption, closeSearch, darkMode, toggleDarkMode, showBookModal, bookModal, closeBookModal, modalDetail}}>{children}</AppContext.Provider>
     )
 }
 

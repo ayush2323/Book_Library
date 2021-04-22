@@ -4,7 +4,7 @@ import './index.css'
 import {useCostumHooks} from '../../context'
 
 const Book_Grid_View = () => {
-    const {grid, books} = useCostumHooks()
+    const {grid, books, showBookModal} = useCostumHooks()
     const setClass = () => {
         if(grid) return 'book_grid'
         return 'book_list'
@@ -13,7 +13,7 @@ const Book_Grid_View = () => {
     return (
         <div className={setClass()}>
             {books.map((item, index) => (
-                <BookRow key={index} item={item} />
+                <BookRow key={index} item={item} index={index} showBookModal={showBookModal} />
             ))}
         </div>
     )

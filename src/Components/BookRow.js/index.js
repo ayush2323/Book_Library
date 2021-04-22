@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './index.css'
 import { useCostumHooks } from '../../context'
 
-const BookRow = ({ item }) => {
+const BookRow = ({ item, index, showBookModal }) => {
     // const [css, setCss] = useState({
     //     "bookClass": "book_row", "imageClass": "book_cover_image_conatiner", "fullBookCss": "full_book", "infoClass": "book_info", "authorClass": "book_author", "titleClass": "book_title", "progressClass": "reading_process"
     // })
@@ -49,7 +49,7 @@ const BookRow = ({ item }) => {
     }, [grid])
 
     return (
-        <div className={bookClass}>
+        <div onClick={() => showBookModal(index)} className={bookClass}>
             <div className={fullBookClass}>
                 <div className={progressClass}>
                     <span style={{ color: textColor() }} className={percentClass}>{item.progress}%</span>
